@@ -3,29 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Média</title>
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<div class="media-container">
+<div id="popup2"></div>
 
-  <!-- MP4 -->
-  <a href="VIDEOS/video1.mp4">
-    <div class="media-square" style="
-      background-image:url('IMAGES/QR LOGO MP4.png');
-    "></div>
-  </a>
-
-  <!-- PDF -->
-  <a href="DOCS/document1.pdf">
-    <div class="media-square" style="
-      background-image:url('IMAGES/QR LOGO PDF.png');
-    "></div>
-  </a>
-
-</div>
+<script>
+// POPUP2 – dva čtverce (MP4 + PDF)
+fetch("LIBRARY/POPUP2")
+  .then(r => r.text())
+  .then(html => document.getElementById("popup2").innerHTML = html);
+</script>
 
 </body>
 </html>
-
