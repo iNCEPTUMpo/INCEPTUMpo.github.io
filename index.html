@@ -10,40 +10,14 @@ body {
   font-family: sans-serif;
 }
 
-/* HERO */
-.hero {
+/* Kontejner pro vložené komponenty */
+.component {
   width: 100%;
-  background: white;
-  border-bottom: 3px solid black;
-  padding: 30px 0;
-  text-align: center;
 }
 
-.hero-logo {
-  width: 50%;
-  height: 200px;
-  margin: 0 auto;
-  background-image: url('IMAGES/LOGO iNCEPTUM.png');
-  background-size: 100% 120%;
-  background-position: center -10%;
-  background-repeat: no-repeat;
-}
-
-/* POP-UP ČTVEREC */
-.square {
-  width: 250px;
-  height: 250px;
-  margin: 40px auto;
-  border: 3px solid black;
-  background-image: url('IMAGES/LOGO PPSK FIN.png');
-  background-size: 100% 100%;
-  background-position: center -10%;
-  background-repeat: no-repeat;
-  transition: transform 0.2s ease;
-}
-
-.square:hover {
-  transform: scale(1.05);
+/* Aby se hero i popup zobrazily správně */
+.component > * {
+  display: block;
 }
   </style>
 </head>
@@ -51,15 +25,22 @@ body {
 <body>
 
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-logo"></div>
-</div>
+<div id="hero" class="component"></div>
 
-<!-- POP-UP ČTVEREC → odkaz na stránku s mp4+pdf -->
-<a href="media.html">
-  <div class="square"></div>
-</a>
+<!-- POPUP -->
+<div id="popup1" class="component"></div>
+
+<script>
+// HERO
+fetch("LIBRARY/HERO.html")
+  .then(r => r.text())
+  .then(html => document.getElementById("hero").innerHTML = html);
+
+// POPUP 1
+fetch("LIBRARY/POPUP1.html")
+  .then(r => r.text())
+  .then(html => document.getElementById("popup1").innerHTML = html);
+</script>
 
 </body>
 </html>
-
