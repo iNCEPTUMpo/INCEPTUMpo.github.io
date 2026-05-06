@@ -6,21 +6,21 @@
 ">
 
   <!-- MP4 -->
-  <a href='../VIDEOS/video1.mp4'>
-    <div style="
-      width:250px;
-      height:250px;
-      border:3px solid black;
-      background-image:url('../IMAGES/QR LOGO MP4.png');
-      background-size:100% 100%;
-      background-position:center;
-      background-repeat:no-repeat;
-      transition:transform 0.2s ease;
-    "
-    onmouseover="this.style.transform='scale(1.05)'"
-    onmouseout="this.style.transform='scale(1)'">
-    </div>
-  </a>
+ <a href="../VIDEOS/ÚVODNÍ VIDEO.mp4">
+  <div style="
+    width:250px;
+    height:250px;
+    border:3px solid black;
+    background-image:url('../IMAGES/QR LOGO MP4.png');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:transform 0.2s ease;
+  "
+  onmouseover="this.style.transform='scale(1.05)'"
+  onmouseout="this.style.transform='scale(1)'">
+  </div>
+</a>
 
   <!-- PDF -->
   <a href='../DOCS/document1.pdf'>
