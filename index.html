@@ -12,34 +12,31 @@
 body {
     font-family: 'AgencyFB', sans-serif;
 }
-    .hero-wrapper {
+
+/* HERO OŘEZ 10 % NAHOŘE I DOLE */
+.hero-crop {
   width: 100%;
-  text-align: center;
+  height: 300px; /* výška hero sekce – můžeš změnit */
+  background-image: url('IMAGES/LOGO iNCEPTUM.png');
+  background-size: 100% 120%; /* zvětší obrázek o 20 % → 10 % nahoře + 10 % dole se ořízne */
+  background-position: center -10%; /* posun nahoru o 10 % */
+  background-repeat: no-repeat;
   background-color: white;
   border-bottom: 3px solid black;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
-
-.hero-img {
-  width: 50%; /* přesně polovina šířky */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-</style>
+  </style>
 
   <meta charset="UTF-8">
   <title>Můj web</title>
 </head>
-<body>
-  <div class="hero-wrapper">
-  <img src="IMAGES/LOGO iNCEPTUM.png" class="hero-img">
-</div>
 
-  <h1>Ahoj světe!</h1>
-  <p>Můj web na GitHub Pages.</p>
+<body>
+
+<div class="hero-crop"></div>
+
+<h1>Ahoj světe!</h1>
+<p>Můj web na GitHub Pages.</p>
+
 </body>
 </html>
 
