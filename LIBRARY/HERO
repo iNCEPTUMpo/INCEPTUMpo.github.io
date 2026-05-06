@@ -1,18 +1,17 @@
-<div class="hero" style="
+<div style="
   width:100%;
   background:white;
   border-bottom:3px solid black;   /* ✔ linka přes celou šířku */
   padding:30px 0;
   text-align:center;
 ">
-  <div class="hero-logo" style="
+  <div style="
     width:50%;
     height:200px;
     margin:0 auto;
     background-image:url('../IMAGES/LOGO iNCEPTUM.png');
-    background-size:100% 100%;     /* ✔ žádná deformace */
+    background-size:100% 100%;
     background-position:center;
     background-repeat:no-repeat;
   "></div>
 </div>
-
