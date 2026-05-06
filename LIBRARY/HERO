@@ -1,1 +1,14 @@
+<div class="hero">
+  <div class="hero-logo" style="
+    width:50%;
+    height:200px;
+    margin:0 auto;
+    background-image:url('../IMAGES/LOGO iNCEPTUM.png');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-bottom:3px solid black;
+    padding-bottom:30px;
+  "></div>
+</div>
 
