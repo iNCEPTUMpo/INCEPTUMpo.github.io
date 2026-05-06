@@ -3,44 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>INCEPTUM</title>
-
-  <style>
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-/* Kontejner pro vložené komponenty */
-.component {
-  width: 100%;
-}
-
-/* Aby se hero i popup zobrazily správně */
-.component > * {
-  display: block;
-}
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
-<div id="hero" class="component"></div>
-
-<!-- POPUP -->
-<div id="popup1" class="component"></div>
+<div id="hero"></div>
+<div id="popup1"></div>
 
 <script>
 // HERO
-fetch("LIBRARY/HERO.html")
+fetch("LIBRARY/HERO")
   .then(r => r.text())
   .then(html => document.getElementById("hero").innerHTML = html);
 
-// POPUP 1
-fetch("LIBRARY/POPUP1.html")
+// POPUP1
+fetch("LIBRARY/POPUP1")
   .then(r => r.text())
   .then(html => document.getElementById("popup1").innerHTML = html);
 </script>
 
 </body>
 </html>
+
